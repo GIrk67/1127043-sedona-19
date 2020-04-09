@@ -29,7 +29,97 @@
   </header>
 
   <main class="page-form">
-    <!-- здесь будет форма -->
+    <h1 class="page-form__title">Sedona</h1>
+    <div class="page-form__inscription inscription">
+      <h2 class="inscription__title">Оставьте свой отзыв</h2>
+      <p class="inscription__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также
+        о посещенных вами достопримечательностях</p>
+    </div>
+    <form class="page-form__wrapper feedback" action="https://echo.htmlacademy.ru" method="POST">
+
+      <fieldset class="feedback__module names">
+        <legend class="names__title">Представьтесь:</legend>
+        <ul class="names__wrapper">
+          <li class="names__list">
+            <label class="names__label names__label--firstname" for="firstname">Имя*:</label>
+            <input class="names__input names__input--firstname" type="text" name="firstname" id="firstname"
+              placeholder="Петр">
+          </li>
+          <li class="names__list">
+            <label class="names__label names__label--secondname" for="secondname">Фамилия*:</label>
+            <input class="names__input names__input--secondname" type="text" name="secondname" id="secondname"
+              placeholder="Иванов">
+          </li>
+          <li class="names__list">
+            <label class="names__label names__label--thirdname" for="thirdname">Отчество*:</label>
+            <input class="names__input names__input--thirdname" type="text" name="thirdname" id="thirdname"
+              placeholder="Александрович">
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="feedback__module contacts">
+        <legend class="contact__title">Контактная информация:</legend>
+        <p class="contacts__wrapper">
+          <label class="contacts__label contacts__label--phone" for="your-phone">Контактный телефон*:</label>
+          <input class="contacts__input contacts__input--phone" type="text" name="your-phone" id="your-phone"
+            placeholder="Введите телефон">
+        </p>
+        <p class="contacts__wrapper">
+          <label class="contacts__label contacts__label--email" for="your-email">Электронная почта*:</label>
+          <input class="contacts__input contacts__input--email" type="email" name="your-email" id="your-email"
+            placeholder="Введите e-mail">
+        </p>
+      </fieldset>
+
+      <fieldset class="feedback__module impressions">
+        <legend class="impressions__title">Ваше общее впечатление</legend>
+        <ul class="impressions__list">
+          <li class="impressions__item">
+            <input class="impressions__input" type="radio" name="positive" id="positive" checked>
+            <label class="impressions__label" for="positive">Скорее положительное</label>
+          </li>
+          <li>
+            <input class="impressions__input" type="radio" name="negative" id="negative">
+            <label class="impressions__label" for="negative">Скорее отрицательное</label></li>
+          <li>
+            <input class="impressions__input" type="radio" name="no-answer" id="no-answer">
+            <label class="impressions__label" for="no-answer">Затрудняюсь ответить</label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="feedback__module attractions">
+        <legend class="attractions__title">Посещенные достопримечательности:</legend>
+        <ul class="attractions__list">
+          <li class="attractions__item">
+            <input class="attractions__input" type="checkbox" name="devil-bridge" id="devil-bridge" checked>
+            <label class="attractions__label" for="devil-bridge">Мост Дьявола</label>
+          </li>
+          <li class="attractions__item">
+            <input class="attractions__input" type="checkbox" name="bell-mountain" id="bell-mountain" checked>
+            <label class="attractions__label" for="bell-mountain">Гора-Колокол</label>
+          </li>
+          <li class="attractions__item">
+            <input class="attractions__input" type="checkbox" name="slidepark" id="slidepark" checked>
+            <label class="attractions__label" for="slidepark">Слайд-парк</label>
+          </li>
+          <li class="attractions__item">
+            <input class="attractions__input" type="checkbox" name="redrock" id="redrock">
+            <label class="attractions__label" for="redrock">Красные скалы</label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <div class="feedback__module emotions">
+        <label class="emotions__title" for="your-emotions">Опишите свои эмоции</label>
+        <textarea class="emotions__message" name="your-emotions" id="your-emotions"
+          placeholder="Опишите подробно все свои восторги"></textarea>
+      </div>
+      <button class="form-button button" type="submit">Отправить отзыв</button>
+    </form>
+    </section>
+
   </main>
 
   <footer class="page-footer">
@@ -39,8 +129,24 @@
       <li class="social__item"><a class="social__link social__link--facebook" href="#">Фейсбук</a></li>
       <li class="social__item"><a class="social__link social__link--youtube" href="#">Ютуб</a></li>
     </ul>
-    <p>Разработано<a href="https://htmlacademy.ru"><span class="visually-hidden">HTML Academy</span></a></p>
+    <p class="page-footer__copyright">Разработано<a class="page-footer__copyright-link"
+        href="https://htmlacademy.ru"><span class="visually-hidden">HTML Academy</span></a></p>
   </footer>
+
+
+  <section class="modal modal--error">
+    <b class="modal__title">Что-то пошло не так!</b>
+    <p class="modal__text">Проверьте поля, выделенные красным. Скорее всего вы забыли их заполнить</p>
+    <button class="modal__button button" type="button">Ок</button>
+  </section>
+
+  <section class="modal modal--success">
+    <b class="modal__title">Что-то пошло не так!</b>
+    <p class="modal__text">Спасибо за ваше участие.Ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на
+      сайте.</p>
+    <button class="modal__button button" type="button">Закрыть окно</button>
+  </section>
+
 
 </body>
 
