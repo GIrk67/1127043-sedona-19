@@ -1,0 +1,44 @@
+@import "font.scss";
+@import "page-header.scss";
+@import "main-nav.scss";
+@import "site-list.scss";
+@import "page-main.scss";
+@import "advantage.scss";
+@import "reasons.scss";
+@import "sublist.scss";
+@import "page-footer.scss";
+@import "social.scss";
+@import "page-photo.scss";
+@import "photo.scss";
+
+body {
+  margin: 0 auto;
+
+  font-family: 'PT Sans', sans-serif;
+  background: #ffffff;
+  width: 320px;
+  box-sizing: border-box;
+
+  outline: 2px solid #cccccc;
+
+}
+
+img {
+  width: 100%;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(0, 0, 0, 0);
+
+  border: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
