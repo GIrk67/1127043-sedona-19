@@ -1,29 +1,32 @@
 @import "font.scss";
-@import "page-header.scss";
-@import "main-nav.scss";
-@import "site-list.scss";
-@import "page-main.scss";
-@import "advantage.scss";
-@import "reasons.scss";
-@import "sublist.scss";
-@import "page-footer.scss";
-@import "social.scss";
-@import "page-photo.scss";
-@import "photo.scss";
+@import "./blocks/advantage.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/page-footer.scss";
+@import "./blocks/page-header.scss";
+@import "./blocks/page-main.scss";
+@import "./blocks/page-photo.scss";
+@import "./blocks/photo.scss";
+@import "./blocks/reasons.scss";
+@import "./blocks/site-list.scss";
+@import "./blocks/social.scss";
+@import "./blocks/sublist.scss";
 
 body {
-  margin: 0 auto;
-
-  font-family: "PT Sans", sans-serif;
-  background: #ffffff;
-  width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", "Arial", sans-serif;
+  background-color: #ffffff;
   box-sizing: border-box;
+}
 
-  outline: 2px solid #cccccc;
+.container {
+  margin: 0 auto;
+  width: 320px;
 }
 
 img {
   width: 100%;
+  height: auto;
 }
 
 .visually-hidden:not(:focus):not(:active),

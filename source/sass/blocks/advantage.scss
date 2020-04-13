@@ -4,18 +4,22 @@
   line-height: 26px;
 }
 
+.advantage__preamble {
+  padding: 43px 25px 29px;
+  text-align: center;
+}
+
 .advantage__title {
   padding: 0;
-  margin: 43px 25px 29px;
+  margin: 0;
+  margin-bottom: 34px;
   font-size: 18px;
   font-weight: 700;
-  text-align: center;
 }
 
 .advantage__text {
   margin: 0;
   padding: 0;
-  margin-bottom: 10px;
   color: #333333;
   font-size: 14px;
   font-weight: 400;
