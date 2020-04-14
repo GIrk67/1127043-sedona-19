@@ -1,3 +1,4 @@
+@import "base.scss";
 @import "font.scss";
 @import "./blocks/advantage.scss";
 @import "./blocks/main-nav.scss";
@@ -6,41 +7,10 @@
 @import "./blocks/page-main.scss";
 @import "./blocks/page-photo.scss";
 @import "./blocks/photo.scss";
+@import "./blocks/video.scss";
 @import "./blocks/reasons.scss";
 @import "./blocks/site-list.scss";
 @import "./blocks/social.scss";
 @import "./blocks/sublist.scss";
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "PT Sans", "Arial", sans-serif;
-  background-color: #ffffff;
-  box-sizing: border-box;
-}
-
-.container {
-  margin: 0 auto;
-  width: 320px;
-}
-
-img {
-  width: 100%;
-  height: auto;
-}
-
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-
-  margin: -1px;
-  padding: 0;
-  width: 1px;
-  height: 1px;
-  clip: rect(0, 0, 0, 0);
-
-  border: 0;
-  overflow: hidden;
-  white-space: nowrap;
-}
+@import "./blocks/form-search.scss";
+@import "./blocks/button.scss";
