@@ -1,0 +1,52 @@
+.reasons {
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.reasons__item {
+  padding: 0;
+  margin: 0;
+  background-color: #efefef;
+}
+
+.reasons__title {
+  margin: 0;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.reasons__number {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.reasons__description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  padding: 20px 27px 45px;
+}
+
+.reason__photo {
+  display: block;
+}
+
+.reasons__sublist {
+  list-style: none;
+}
+
+.reasons__item--city,
+.reasons__item--bridge {
+  background-color: #81b3d2;
+  color: #ffffff;
+}
