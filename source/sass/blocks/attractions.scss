@@ -1,0 +1,66 @@
+.attractions__list {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 25px;
+  list-style: none;
+}
+
+.attractions__item {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+.attractions__label {
+  position: relative;
+  display: block;
+
+  padding: 7px 0 7px 72px;
+  text-transform: none;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 46px;
+    height: 46px;
+
+    background-color: #f2f2f2;
+    border-radius: 5px;
+  }
+
+  &:hover::before {
+    background-color: #e5e5e5;
+  }
+
+  &:active::before {
+    background-color: #d5d5d5;
+  }
+}
+
+.attractions__input:checked + .attractions__label::after {
+  content: "";
+  display: block;
+  position: absolute;
+
+  top: 15px;
+  left: 13px;
+
+  width: 25px;
+  height: 19px;
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+}
+
+.attractions__input:checked + .attractions__label:active::after {
+  opacity: 0.3;
+}
