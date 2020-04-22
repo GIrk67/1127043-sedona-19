@@ -1,7 +1,7 @@
 .button {
   font-family: inherit;
-  background-color: #81b3d2;
-  color: #ffffff;
+  background-color: $light-grey-blue;
+  color: $white;
   font-size: 21px;
   font-weight: 700;
   text-align: center;
@@ -9,15 +9,15 @@
   border: none;
 
   &:hover {
-    background-color: #669ec0;
+    background-color: $middle-grey-blue;
   }
 
   &:active {
-    background-color: #5496bd;
-    color: rgba(255, 255, 255, 0.3);
+    background-color: $dark-grey-blue;
+    color: $white-30;
   }
 
   &:disabled {
-    background-color: #e5e5e5;
+    background-color: $grey;
   }
 }
