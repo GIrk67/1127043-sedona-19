@@ -1,6 +1,6 @@
 .page-footer {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: $white;
+  color: $black;
 }
 
 .page-footer__title {
@@ -8,13 +8,14 @@
   font-weight: 700;
   line-height: 26px;
   text-align: center;
-  margin: 40px 92px;
+  margin: 40px auto;
   text-transform: uppercase;
 }
 
 .page-footer__copyright-wrapper {
   display: flex;
   align-items: center;
+  margin: 0 auto;
   padding: 40px 95px 23px;
 }
 
@@ -30,4 +31,24 @@
 
 .page-footer__copyright-link {
   margin-left: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .page-footer__title,
+  .page-footer__copyright-wrapper {
+    width: 256px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__title,
+  .page-footer__copyright-wrapper {
+    width: 400px;
+  }
 }
