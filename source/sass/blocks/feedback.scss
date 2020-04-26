@@ -69,13 +69,11 @@
 .feedback__list--name {
   .feedback__item {
     display: flex;
-
     align-items: center;
   }
 
   .feedback__input {
     margin-left: 15px;
-    margin-right: auto;
   }
 }
 
@@ -87,5 +85,77 @@
 
   .feedback__input {
     margin-top: 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .feedback__wrapper {
+    width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .feedback__module {
+    min-width: 768px;
+    margin: 0 auto;
+    border-bottom: none;
+
+    &--name {
+      min-width: 364px;
+    }
+
+    &--impressions {
+      min-width: 364px;
+      order: -1;
+      border-right: 1px solid #e5e5e5;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback__wrapper {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  .feedback__module {
+    min-width: 960px;
+    padding: 0;
+
+    &--name,
+    &--impressions {
+      min-width: 480px;
+    }
+  }
+
+  .feedback__title {
+    font-size: 21px;
+  }
+
+  .feedback__list--contacts {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    .feedback__item {
+      width: 480px;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .feedback__label {
+      margin-right: 15px;
+
+      &--phone-word {
+        display: none;
+      }
+    }
+
+    .feedback__input {
+      margin: 0;
+      max-width: 315px;
+    }
   }
 }

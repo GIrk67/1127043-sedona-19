@@ -3,11 +3,12 @@
   font-size: 14px;
   line-height: 24px;
   text-align: left;
-  color: #333333;
+  color: $dark;
   text-transform: uppercase;
 }
 
 .page-form__inscription {
+  margin: 0 auto;
   border: none;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -31,4 +32,45 @@
   display: block;
   padding: 16px 47px;
   margin: 0 auto;
+}
+
+.form__required {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-form__inscription {
+    max-width: 440px;
+    border-bottom: none;
+  }
+
+  .inscription__title {
+    font-size: 30px;
+  }
+
+  .form__send-wrapper {
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__required {
+    display: block;
+    font-size: 14px;
+    text-align: right;
+    color: $dark;
+  }
+
+  .form-button {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__send-wrapper {
+    width: 960px;
+    margin: 0 auto;
+  }
 }

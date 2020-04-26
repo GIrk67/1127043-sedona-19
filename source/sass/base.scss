@@ -44,12 +44,13 @@ input[type="radio"].visually-hidden {
 }
 
 @media (min-width: $desktop-width) {
-  .body {
+  body {
     background-color: $light-grey;
   }
 
   .container {
     min-width: 1200px;
+    background-color: $white;
     box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
   }
 }
