@@ -64,3 +64,29 @@
 .attractions__input:checked + .attractions__label:active::after {
   opacity: 0.3;
 }
+
+@media (min-width: $tablet-width) {
+  .attractions__list {
+    margin: 0 auto;
+    width: 470px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .attractions__item {
+    display: block;
+    width: 235px;
+    margin-top: 32px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .attractions__list {
+    width: 960px;
+  }
+
+  .attractions__item {
+    padding: 0;
+  }
+}

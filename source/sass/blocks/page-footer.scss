@@ -47,8 +47,22 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-footer {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
   .page-footer__title,
   .page-footer__copyright-wrapper {
-    width: 400px;
+    width: 320px;
+  }
+
+  .page-footer__title {
+    text-align: left;
+  }
+
+  .page-footer__copyright-wrapper {
+    padding: 0;
+    justify-content: flex-end;
   }
 }

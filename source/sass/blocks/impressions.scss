@@ -64,3 +64,10 @@
 .impressions__input:checked + .impressions__label:active::after {
   opacity: 0.3;
 }
+
+@media (min-width: $tablet-width) {
+  .impressions__item {
+    margin-top: 32px;
+    padding: 0;
+  }
+}
