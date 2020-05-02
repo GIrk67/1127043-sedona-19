@@ -13,54 +13,74 @@
 }
 
 .page-header__bg-photo {
+  position: relative;
   order: 2;
   margin-top: -27px;
   background-color: $white;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   width: 320px;
   height: 389px;
-  background-position: 50% 0;
+  background-size: cover;
   background-repeat: no-repeat;
-}
+  background-position: 0 0;
 
-.page-header__bg-photo--inner {
-  background-color: $white;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  width: 320px;
-  height: 158px;
-  background-position: 50% 100%;
+  &--inner {
+    height: 158px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+
+    width: 320px;
+    height: 26px;
+
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+  }
 }
 
 .page-header__bg-title {
   width: 281px;
   height: 214px;
   margin: 90px 19px 85px;
-}
 
-.page-header__bg-title--inner {
-  width: 229px;
-  height: 39px;
-  margin: 52px 46px 67px;
+  &--inner {
+    width: 229px;
+    height: 39px;
+    margin: 52px 46px 67px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .page-header__logo {
-    position: absolute;
-    order: 0;
-    top: 0;
-    left: 50%;
-    margin-left: -51px;
+    width: 102px;
+    height: 83px;
+    order: 2;
+    margin: 0 auto;
+    background-size: cover;
+    margin-top: -56px;
   }
 
   .page-header__bg-photo {
-    order: 2;
+    position: relative;
     margin-top: -27px;
     background-color: $white;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     width: 768px;
     height: 518px;
-    background-position: 50% 0;
-    background-repeat: no-repeat;
+
+    &::before {
+      width: 768px;
+      height: 57px;
+
+      background-image: url("../img/bg-intro-triangle-tablet.svg");
+    }
   }
 
   .page-header__bg-title {
@@ -72,22 +92,22 @@
 
 @media (min-width: $desktop-width) {
   .page-header__logo {
-    position: absolute;
-    order: 0;
-    top: 0;
-    left: 50%;
-    margin-left: -51px;
+    width: 187px;
+    height: 96px;
   }
 
   .page-header__bg-photo {
-    order: 2;
-    margin-top: -27px;
     background-color: $white;
     background-image: url("../img/bg-back-desktop@1x.jpg");
     width: 1200px;
     height: 518px;
-    background-position: 50% 0;
-    background-repeat: no-repeat;
+
+    &::before {
+      width: 1200px;
+      height: 57px;
+
+      background-image: url("../img/bg-intro-triangle-desktop.svg");
+    }
   }
 
   .page-header__bg-title {
