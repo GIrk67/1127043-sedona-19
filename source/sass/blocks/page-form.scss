@@ -28,13 +28,13 @@
   margin-bottom: 22px;
 }
 
-.form-button {
+.page-form__button {
   display: block;
   padding: 16px 47px;
   margin: 0 auto;
 }
 
-.form__required {
+.page-form__required {
   display: none;
 }
 
@@ -48,7 +48,7 @@
     font-size: 30px;
   }
 
-  .form__send-wrapper {
+  .page-form__send-wrapper {
     width: 768px;
     margin: 0 auto;
     padding: 0 20px;
@@ -56,20 +56,20 @@
     justify-content: space-between;
   }
 
-  .form__required {
+  .page-form__required {
     display: block;
     font-size: 14px;
     text-align: right;
     color: $dark;
   }
 
-  .form-button {
+  .page-form__button {
     margin: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .form__send-wrapper {
+  .page-form__send-wrapper {
     width: 960px;
     margin: 0 auto;
   }

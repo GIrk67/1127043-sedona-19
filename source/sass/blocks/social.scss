@@ -20,8 +20,28 @@
 }
 
 .social__link {
+  display: block;
   font-size: 0;
   text-decoration: none;
+
+  fill: $white;
+  height: 14px;
+
+  &--twitter {
+    width: 18px;
+    padding: 17px 15px;
+  }
+
+  &--facebook {
+    width: 9px;
+    height: 18px;
+    padding: 14px 19px;
+  }
+
+  &--youtube {
+    width: 20px;
+    padding: 17px 13px;
+  }
 }
 
 @media (min-width: $tablet-width) {

@@ -10,6 +10,28 @@
   padding-left: 45px;
 }
 
+.sublist__icon {
+  position: absolute;
+  top: -8px;
+  left: -3px;
+  fill: $light-grey-blue;
+
+  &--house {
+    width: 37px;
+    height: 36px;
+  }
+
+  &--gift {
+    width: 32px;
+    height: 38px;
+  }
+
+  &--burger {
+    width: 40px;
+    height: 35px;
+  }
+}
+
 .sublist__title {
   color: $black;
   font-size: 18px;
@@ -28,19 +50,47 @@
   .sublist {
     padding: 0;
     display: flex;
-
     text-align: center;
   }
 
   .sublist__item {
     width: 256px;
-    padding: 45px;
+    padding: 60px 45px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+
+    &--gift {
+      order: 2;
+    }
+
+    &--burger {
+      order: 1;
+    }
+  }
+
+  .sublist__icon {
+    display: block;
+    position: relative;
+
+    &--house {
+      width: 75px;
+      height: 72px;
+    }
+
+    &--gift {
+      width: 64px;
+      height: 75px;
+    }
+
+    &--burger {
+      width: 77px;
+      height: 68px;
+    }
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .sublist__item {
     width: 400px;
     padding: 65px;

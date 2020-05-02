@@ -87,11 +87,17 @@
   text-align: left;
 }
 
-.photo-preview {
+.photo__like-icon {
+  margin-right: 15px;
+  opacity: 0.3;
+}
+
+.photo__preview {
   display: block;
   margin: 0 auto;
   width: 280px;
   height: 280px;
+  background-size: cover;
 }
 
 @media (min-width: $tablet-width) {
@@ -142,9 +148,14 @@
     max-width: 220px;
   }
 
-  .photo-preview {
+  .photo__like-icon {
+    margin-right: 9px;
+  }
+
+  .photo__preview {
     width: 324px;
     height: 267px;
+    background-size: cover;
 
     &--first {
       width: 648px;
@@ -190,7 +201,11 @@
     color: $white;
   }
 
-  .photo-preview {
+  .photo__like-icon {
+    opacity: 1;
+  }
+
+  .photo__preview {
     padding: 0;
     margin: 0;
     width: 400px;
