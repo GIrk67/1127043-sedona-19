@@ -90,6 +90,8 @@
 .photo__like-icon {
   margin-right: 15px;
   opacity: 0.3;
+
+  cursor: pointer;
 }
 
 .photo__preview {
@@ -153,14 +155,25 @@
   }
 
   .photo__preview {
-    width: 324px;
+    width: 100%;
     height: 267px;
+    margin: 0 auto;
     background-size: cover;
 
     &--first {
-      width: 648px;
       height: 400px;
     }
+  }
+
+  .photo__preview img {
+    display: block;
+    width: 324px;
+    height: 100%;
+  }
+
+  .photo__preview--first img {
+    display: block;
+    width: 648px;
   }
 }
 
@@ -202,17 +215,34 @@
   }
 
   .photo__like-icon {
+    fill: $white;
     opacity: 1;
+
+    &:hover,
+    &:active {
+      fill: $white-60;
+    }
   }
 
   .photo__preview {
     padding: 0;
     margin: 0;
-    width: 400px;
+    width: 100%;
     height: 267px;
 
     &--first {
       width: 1200px;
     }
+  }
+
+  .photo__preview img {
+    display: block;
+    width: 400px;
+    height: 100%;
+  }
+
+  .photo__preview--first img {
+    display: block;
+    width: 1200px;
   }
 }

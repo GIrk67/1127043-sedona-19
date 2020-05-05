@@ -99,26 +99,68 @@
   }
 }
 
+.feedback__input--phone {
+  position: relative;
+  display: block;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    left: 0;
+    top: 0;
+    width: 58px;
+    height: 58px;
+    background-color: red;
+    z-index: 10;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .feedback__wrapper {
-    width: 768px;
+    width: 648px;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
   }
 
   .feedback__module {
     width: 648px;
-    margin: 0 auto;
+    padding: 0;
     border-bottom: none;
 
     &--name {
-      width: 317px;
+      width: 324px;
+      border-left: 1px solid #e5e5e5;
+
+      .feedback__title {
+        margin-left: 0;
+        padding-left: 48px;
+        text-align: left;
+        padding-bottom: 40px;
+      }
     }
 
     &--impressions {
-      width: 317px;
+      width: 324px;
       order: -1;
-      border-right: 1px solid #e5e5e5;
+
+      .feedback__title {
+        margin-left: 0;
+        text-align: left;
+        padding-bottom: 35px;
+      }
+    }
+  }
+
+  .feedback__title {
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .feedback__list--name {
+    .feedback__item {
+      justify-content: end;
     }
   }
 }
