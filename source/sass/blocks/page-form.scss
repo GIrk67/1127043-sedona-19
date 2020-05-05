@@ -49,9 +49,9 @@
   }
 
   .page-form__send-wrapper {
-    width: 768px;
+    width: 648px;
     margin: 0 auto;
-    padding: 0 20px;
+    margin-bottom: 60px;
     display: flex;
     justify-content: space-between;
   }
@@ -65,6 +65,7 @@
 
   .page-form__button {
     margin: 0;
+    padding: 16px 65px;
   }
 }
 

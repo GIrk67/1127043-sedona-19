@@ -22,6 +22,11 @@
   display: block;
   margin: 0 auto;
   width: 270px;
+
+  &--squre,
+  &--road {
+    border-bottom: 1px solid $black-10;
+  }
 }
 
 .reasons__title {
@@ -79,16 +84,18 @@
   }
 
   .reasons__title {
-    max-width: 125px;
+    max-width: 160px;
     display: block;
     margin: 0 auto;
   }
 
   .reasons__preamble {
     width: 170px;
+    border-bottom: none;
   }
 
   .reasons__photo {
+    display: block;
     width: 512px;
     height: 256px;
   }
@@ -104,12 +111,16 @@
     }
   }
 
+  .reasons__title {
+    max-width: 170px;
+  }
+
   .reasons__preamble {
     width: 270px;
   }
 
   .reasons__photo {
     width: 800px;
-    height: 256px;
+    height: 400px;
   }
 }

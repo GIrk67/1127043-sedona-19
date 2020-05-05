@@ -28,6 +28,23 @@
   background-position: 0 0;
 }
 
+.video__control {
+  width: 280px;
+  height: 111px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -45px;
+}
+
+.video__scale {
+  order: -1;
+  display: block;
+  min-width: 280px;
+  height: 45px;
+  background-color: $black-30;
+}
+
 @media (min-width: $tablet-width) {
   .video__question {
     font-size: 30px;
@@ -41,6 +58,22 @@
     background-image: url("../img/video-tablet@1x.jpg");
     width: 648px;
     height: 499px;
+  }
+
+  .video__control {
+    width: 648px;
+    height: 93px;
+    margin-top: -93px;
+    align-items: center;
+
+    &--replay {
+      order: -1;
+    }
+  }
+
+  .video__scale {
+    order: 0;
+    width: 389px;
   }
 }
 

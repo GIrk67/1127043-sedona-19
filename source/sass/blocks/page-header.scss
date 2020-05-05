@@ -59,12 +59,19 @@
 
 @media (min-width: $tablet-width) {
   .page-header__logo {
-    width: 102px;
+    width: 100%;
     height: 83px;
     order: 2;
-    margin: 0 auto;
+
     background-size: cover;
     margin-top: -56px;
+  }
+
+  .page-header__logo img {
+    display: block;
+    width: 102px;
+    height: auto;
+    margin: 0 auto;
   }
 
   .page-header__bg-photo {
@@ -78,7 +85,6 @@
     &::before {
       width: 768px;
       height: 57px;
-
       background-image: url("../img/bg-intro-triangle-tablet.svg");
     }
   }
@@ -94,6 +100,11 @@
   .page-header__logo {
     width: 187px;
     height: 96px;
+  }
+
+  .page-header__logo img {
+    width: 187px;
+    height: 100%;
   }
 
   .page-header__bg-photo {
