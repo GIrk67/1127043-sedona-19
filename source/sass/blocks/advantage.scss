@@ -63,6 +63,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .advantage__preamble {
+    padding-top: 49px;
+  }
+
   .advantage__list {
     width: 1200px;
   }
