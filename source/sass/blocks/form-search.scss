@@ -5,7 +5,7 @@
 }
 
 .form-search__wrapper {
-  margin-top: 33px;
+  margin-top: 25px;
   margin-bottom: 49px;
   padding: 0 20px;
 }
@@ -18,8 +18,8 @@
 
 .form-search__phrase {
   margin: 0;
-  margin-top: 25px;
-  margin-bottom: 40px;
+  margin-top: 18px;
+  margin-bottom: 37px;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -31,7 +31,7 @@
 }
 
 .form-search__button {
-  padding: 17px 47px 19px;
+  padding: 15px 47px 16px;
 }
 
 .form-search__wrapper-map {
@@ -50,6 +50,10 @@
     font-size: 30px;
   }
 
+  .form-search__phrase {
+    margin-top: 24px;
+  }
+
   .form-search__hidden {
     display: inline;
   }
@@ -65,7 +69,13 @@
 
 @media (min-width: $desktop-width) {
   .form-search__wrapper {
+    margin-top: 65px;
     margin-bottom: 65px;
+  }
+
+  .form-search__phrase {
+    margin-top: 25px;
+    margin-bottom: 44px;
   }
 
   .form-search__map {
