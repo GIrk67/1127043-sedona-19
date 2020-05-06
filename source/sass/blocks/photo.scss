@@ -5,8 +5,8 @@
 .photo__preamble {
   display: block;
   margin: 0 auto;
-  padding-top: 42px;
-  padding-bottom: 30px;
+  padding-top: 38px;
+  padding-bottom: 28px;
   text-transform: uppercase;
   text-align: center;
   border-bottom: 1px solid #cccccc;
@@ -41,7 +41,7 @@
 
 .photo__item {
   margin: 0;
-  padding: 22px 21px;
+  padding: 22px 21px 19px;
   border-bottom: 1px solid #cccccc;
 
   display: flex;
@@ -50,12 +50,12 @@
 
 .photo__item-wrapper {
   display: block;
-  margin-top: 22px;
+  margin-top: 14px;
   order: 1;
 }
 
 .photo__item-text {
-  margin-bottom: 18px;
+  margin-bottom: 8px;
   max-width: 300px;
 }
 
@@ -72,13 +72,14 @@
 
 .photo__author {
   margin: 0;
-  padding-top: 11px;
+  padding-top: 2px;
   font-size: 14px;
   color: $dark;
   text-transform: none;
 }
 
 .photo__like {
+  display: block;
   order: 2;
   margin: 0;
   font-size: 14px;
@@ -88,7 +89,7 @@
 }
 
 .photo__like-icon {
-  margin-right: 15px;
+  margin-right: 10px;
   opacity: 0.3;
 
   cursor: pointer;
@@ -103,12 +104,19 @@
 }
 
 @media (min-width: $tablet-width) {
+  .photo {
+    margin-bottom: 72px;
+  }
+
   .photo__preamble {
+    padding: 0;
+    margin: 74px auto 70px;
     border-bottom: none;
   }
 
   .photo__title {
     font-size: 30px;
+    margin-bottom: 32px;
   }
 
   .photo__text {
@@ -137,7 +145,7 @@
   }
 
   .photo__item-wrapper {
-    padding: 16px 22px;
+    padding: 0 0 18px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -145,9 +153,14 @@
 
   .photo__item-text {
     margin: 0;
+    padding-left: 22px;
     display: flex;
     flex-direction: column;
-    max-width: 220px;
+    width: 200px;
+  }
+
+  .photo__like {
+    padding-right: 24px;
   }
 
   .photo__like-icon {
@@ -178,9 +191,14 @@
 }
 
 @media (min-width: $desktop-width) {
+  .photo {
+    margin-bottom: 67px;
+  }
+
   .photo__preamble {
     width: 430px;
-    margin-bottom: 75px;
+    margin: 0 auto;
+    margin-bottom: 72px;
   }
 
   .photo__item {
@@ -232,6 +250,7 @@
 
     &--first {
       width: 1200px;
+      height: 400px;
     }
   }
 
@@ -244,5 +263,6 @@
   .photo__preview--first img {
     display: block;
     width: 1200px;
+    height: 400px;
   }
 }

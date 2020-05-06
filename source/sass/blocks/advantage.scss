@@ -5,17 +5,29 @@
 }
 
 .advantage__preamble {
+  position: relative;
   width: 260px;
   margin: 0 auto;
-  padding-top: 35px;
-  padding-bottom: 22px;
+  padding-top: 36px;
+  padding-bottom: 40px;
   text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -30px;
+    width: 320px;
+    height: 37px;
+    background-repeat: no-repeat;
+    background-image: url("../img/bg-triangle.svg");
+  }
 }
 
 .advantage__title {
   padding: 0;
   margin: 0;
-  margin-bottom: 34px;
+  margin-bottom: 27px;
   font-size: 18px;
   font-weight: 700;
 }
@@ -31,14 +43,22 @@
 @media (min-width: $tablet-width) {
   .advantage__preamble {
     padding-top: 51px;
-    padding-bottom: 52px;
+    padding-bottom: 69px;
     width: 500px;
+
+    &::before {
+      display: none;
+    }
   }
 
   .advantage__list {
     width: 768px;
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .advantage__title {
+    font-size: 21px;
   }
 }
 

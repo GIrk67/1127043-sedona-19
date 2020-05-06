@@ -1,5 +1,5 @@
 .video__question {
-  margin: 39px auto 25px;
+  margin: 32px auto 25px;
   padding: 0;
   font-size: 18px;
   font-weight: 700;
@@ -26,6 +26,11 @@
   background-image: url("../img/video-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/video-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 .video__control {
@@ -46,18 +51,29 @@
 }
 
 @media (min-width: $tablet-width) {
+  .video {
+    margin-bottom: 48px;
+  }
+
   .video__question {
     font-size: 30px;
+    margin-bottom: 32px;
   }
 
   .video__phrase {
     width: 420px;
+    margin-bottom: 72px;
   }
 
   .video__picture {
     background-image: url("../img/video-tablet@1x.jpg");
     width: 648px;
     height: 499px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/video-tablet@2x.jpg");
+      background-size: 648px auto;
+    }
   }
 
   .video__control {
@@ -78,10 +94,19 @@
 }
 
 @media (min-width: $desktop-width) {
+  .video {
+    margin-bottom: 15px;
+  }
+
   .video__picture {
     background-image: url("../img/video-desktop@1x.jpg");
     width: 800px;
     height: 500px;
     margin: 0 auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/video-desktop@2x.jpg");
+      background-size: 800px auto;
+    }
   }
 }

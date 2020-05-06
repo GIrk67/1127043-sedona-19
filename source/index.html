@@ -49,16 +49,19 @@
             <li class="reasons__item reasons__item--city">
               <div class="reasons__wrapper">
                 <div class="reasons__preamble">
-                  <h3 class="reasons__title">Настоящий городок</h3>
+                  <h3 class="reasons__title reasons__title--city">Настоящий городок</h3>
                   <p class="reasons__number">- №1 -</p>
-                  <p class="reasons__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+                  <p class="reasons__description reasons__description--city">Седона не аттракцион для туристов, там
+                    течет своя жизнь</p>
                 </div>
                 <div class="reasons__image-wrapper">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg">
-                    <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg">
+                    <source media="(min-width: 1200px)"
+                      srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
                     <img class="reasons__photo" width="320" height="260" src="img/main-city-mobile@1x.jpg"
-                      alt="Фото городка">
+                      srcset="img/main-city-mobile@2x.jpg 2x" alt="Фото городка">
                   </picture>
                 </div>
               </div>
@@ -117,44 +120,47 @@
                     </g>
                   </svg>
                   <h3 class="sublist__title">Еда</h3>
-                  <p class="sublist__description">Всегда заказываейте фирменный бургер, вы не разочаруетесь!</p>
+                  <p class="sublist__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 </li>
               </ul>
             </li>
             <li class="reasons__item reasons__item--bridge">
               <div class="reasons__wrapper reasons__wrapper--bridge">
                 <div class="reasons__preamble">
-                  <h3 class="reasons__title">Там есть мост дьявола</h3>
+                  <h3 class="reasons__title reasons__title--bridge">Там есть <br class="reason__wrap"> мост дьявола</h3>
                   <p class="reasons__number">- №2 -</p>
-                  <p class="reasons__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+                  <p class="reasons__description reasons__description--bridge">Да, по нему можно пройти! Если вы
+                    осмелитесь, конечно</p>
                 </div>
                 <div class="reasons__image-wrapper">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg">
-                    <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg">
-                    <img class="reasons__photo" src="img/main-bridge-mobile@1x.jpg" width="320" height="260"
-                      alt="Фото моста Дьявола">
+                    <source media="(min-width: 1200px)"
+                      srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
+                    <img class="reasons__photo" width="320" height="260" src="img/main-bridge-mobile@1x.jpg"
+                      srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Фото моста Дьявола">
                   </picture>
                 </div>
               </div>
             </li>
             <li class="reasons__item">
-              <div class="reasons__preamble reasons__preamble--squre">
-                <h3 class="reasons__title">Небольшая площадь</h3>
+              <div class="reasons__preamble reasons__preamble--square">
+                <h3 class="reasons__title reasons__title--square">Небольшая площадь</h3>
                 <p class="reasons__number">- №3 -</p>
                 <p class="reasons__description">Все интересные места находятся очень близко</p>
               </div>
             </li>
             <li class="reasons__item">
               <div class="reasons__preamble reasons__preamble--road">
-                <h3 class="reasons__title">Красивая дорога</h3>
+                <h3 class="reasons__title reasons__title--road">Красивая дорога</h3>
                 <p class="reasons__number">- №4 -</p>
                 <p class="reasons__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </div>
             </li>
             <li class="reasons__item">
               <div class="reasons__preamble">
-                <h3 class="reasons__title">Мало туристов</h3>
+                <h3 class="reasons__title reasons__title--few">Мало туристов</h3>
                 <p class="reasons__number">- №5 -</p>
                 <p class="reasons__description">Большинство едет в Гранд Каньон и толпится там</p>
               </div>
@@ -167,16 +173,17 @@
           <h2 class="visually-hidden">Форма поиска и карта местности</h2>
           <b class="form-search__question">Заинтересовались?</b>
           <p class="form-search__phrase">Укажите предполагаемые даты поездки,<br class="form-search__hidden"> и мы
-            покажем вам лучшие предложения в
+            покажем вам лучшие предложения гостиниц в
             седоне
           </p>
           <button class="form-search__button button" type="button">Найти гостиницу</button>
         </div>
         <div class="form-search__wrapper-map">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg">
-            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg">
-            <img class="form-search__map" src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Карта местности">
+            <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+            <img class="form-search__map" width="320" height="350" src="img/bg-map-mobile@1x.jpg"
+              srcset="img/bg-map-mobile@2x.jpg 2x" alt="Карта местности">
           </picture>
 
         </div>

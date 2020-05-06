@@ -1,6 +1,7 @@
 .reasons {
   background-color: $white;
   margin: 0;
+  margin-top: -19px;
   padding: 0;
   list-style: none;
   text-align: center;
@@ -23,7 +24,7 @@
   margin: 0 auto;
   width: 270px;
 
-  &--squre,
+  &--square,
   &--road {
     border-bottom: 1px solid $black-10;
   }
@@ -31,11 +32,23 @@
 
 .reasons__title {
   margin: 0;
-  padding-top: 42px;
-  padding-bottom: 15px;
+  padding-top: 25px;
+  padding-bottom: 10px;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+
+  &--city {
+    padding-top: 61px;
+  }
+
+  &--bridge {
+    padding-top: 42px;
+  }
+}
+
+.reason__wrap {
+  display: none;
 }
 
 .reasons__number {
@@ -48,12 +61,19 @@
 
 .reasons__description {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
+  max-width: 250px;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  margin-top: 20px;
-  padding-bottom: 42px;
+  margin-top: 14px;
+  padding-bottom: 29px;
+
+  &--city,
+  &--bridge {
+    padding-bottom: 42px;
+    max-width: 270px;
+  }
 }
 
 .reasons__photo {
@@ -85,8 +105,26 @@
 
   .reasons__title {
     max-width: 160px;
+    font-size: 21px;
+    padding-top: 45px;
     display: block;
     margin: 0 auto;
+  }
+
+  .reason__wrap {
+    display: inline;
+  }
+
+  .reasons__description {
+    margin: 0;
+    margin-bottom: 18px;
+    padding-top: 21px;
+
+    &--city,
+    &--bridge {
+      margin: 0;
+      padding-top: 19px;
+    }
   }
 
   .reasons__preamble {
@@ -111,16 +149,34 @@
     }
   }
 
-  .reasons__title {
-    max-width: 170px;
+  .reasons__preamble {
+    width: 256px;
   }
 
-  .reasons__preamble {
-    width: 270px;
+  .reasons__title {
+    padding-top: 55px;
+
+    &--square,
+    &--road,
+    &--few {
+      padding-top: 50px;
+    }
+  }
+
+  .reasons__description {
+    margin: 0;
+    margin-bottom: 27px;
+    padding-top: 21px;
+
+    &--city,
+    &--bridge {
+      margin: 0;
+      padding-top: 19px;
+    }
   }
 
   .reasons__photo {
     width: 800px;
-    height: 400px;
+    height: 256px;
   }
 }
