@@ -120,7 +120,9 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    margin-bottom: 110px;
+    &--inner {
+      margin-bottom: 110px;
+    }
   }
 
   .page-header__logo {
@@ -135,7 +137,7 @@
 
   .page-header__bg-photo {
     position: relative;
-    margin-top: -93px;
+    margin-top: -37px;
     background-color: $white;
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-position: 0 100%;
@@ -145,6 +147,7 @@
 
     &--inner {
       height: 357px;
+      margin-top: -93px;
     }
 
     &::before {
