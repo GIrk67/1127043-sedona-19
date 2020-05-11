@@ -34,20 +34,81 @@
 }
 
 .video__control {
+  position: relative;
   width: 280px;
-  height: 111px;
+  height: 66px;
   margin: 0 auto;
+
   display: flex;
   flex-wrap: wrap;
-  margin-top: -45px;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-left: 24px;
+  padding-right: 22px;
+
+  background-color: $light-grey;
+}
+
+.video__button {
+  border: none;
+  background: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+
+  &--replay {
+    width: 16px;
+    height: 20px;
+    margin-top: -4px;
+    margin-right: 133px;
+  }
+
+  &--subtitle {
+    width: 32px;
+    height: 20px;
+
+    margin-right: 31px;
+  }
+
+  &--fullscreen {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .video__scale {
+  position: absolute;
   order: -1;
+  top: -45px;
+  left: 0;
+
   display: block;
   min-width: 280px;
   height: 45px;
+
   background-color: $black-30;
+  padding: 20px;
+}
+
+.video__bar {
+  position: absolute;
+  width: 235px;
+  height: 3px;
+
+  background-color: $white-30;
+}
+
+.video__trek {
+  position: absolute;
+  top: 16px;
+  left: 57px;
+  width: 10px;
+  height: 10px;
+  background: $white;
+
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {
@@ -80,16 +141,53 @@
     width: 648px;
     height: 93px;
     margin-top: -93px;
-    align-items: center;
-
-    &--replay {
-      order: -1;
-    }
+    padding-left: 35px;
+    padding-right: 37px;
+    background-color: $black-60;
   }
 
   .video__scale {
+    background: none;
     order: 0;
     width: 389px;
+
+    top: 25px;
+    left: 71px;
+  }
+
+  .video__button {
+    border: none;
+    background: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    fill: $white;
+
+    &--replay {
+      margin-top: -4px;
+      margin-right: 473px;
+    }
+
+    &--subtitle {
+      margin-right: 31px;
+    }
+
+    &--fullscreen {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .video__bar {
+    width: 389px;
+    height: 3px;
+
+    background-color: $white-30;
+  }
+
+  .video__trek {
+    top: 16px;
+    left: 137px;
   }
 }
 
@@ -108,5 +206,23 @@
       background-image: url("../img/video-desktop@2x.jpg");
       background-size: 800px auto;
     }
+  }
+
+  .video__control {
+    width: 800px;
+  }
+
+  .video__button {
+    &--replay {
+      margin-right: 624px;
+    }
+  }
+
+  .video__scale {
+    min-width: 540px;
+  }
+
+  .video__bar {
+    width: 540px;
   }
 }

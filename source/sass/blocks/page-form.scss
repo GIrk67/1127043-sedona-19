@@ -1,19 +1,19 @@
 .page-form {
-  position: relative;
   font-size: 14px;
   line-height: 24px;
   text-align: left;
   color: $dark;
   text-transform: uppercase;
+  margin-bottom: 72px;
 }
 
 .page-form__inscription {
   margin: 0 auto;
   border: none;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid $grey;
 }
 
-.inscription__title {
+.page-form__title {
   margin: 0;
   padding: 0;
   font-size: 18px;
@@ -22,15 +22,15 @@
   margin-top: 40px;
 }
 
-.inscription__description {
+.page-form__description {
   text-align: center;
-  margin-top: 25px;
-  margin-bottom: 22px;
+  margin-top: 27px;
+  margin-bottom: 18px;
 }
 
 .page-form__button {
   display: block;
-  padding: 16px 47px;
+  padding: 16px 49px;
   margin: 0 auto;
 }
 
@@ -39,12 +39,20 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-form {
+    margin-bottom: 72px;
+  }
+
   .page-form__inscription {
+    margin-top: 74px;
+    margin-bottom: 54px;
     max-width: 440px;
     border-bottom: none;
   }
 
-  .inscription__title {
+  .page-form__title {
+    margin: 0;
+    margin-bottom: 34px;
     font-size: 30px;
   }
 
@@ -65,13 +73,22 @@
 
   .page-form__button {
     margin: 0;
-    padding: 16px 65px;
+    padding: 14px 71px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .page-form {
+    margin-bottom: 92px;
+  }
+
   .page-form__send-wrapper {
     width: 960px;
     margin: 0 auto;
+  }
+
+  .page-form__button {
+    margin: 0;
+    padding: 15px 149px;
   }
 }

@@ -1,20 +1,17 @@
 .emotions {
   border-bottom: none;
-  margin-bottom: 25px;
+  margin-top: 10px;
+  margin-bottom: 23px;
 }
 
 .emotions__title {
   padding: 0;
-  margin: 0 auto;
-  margin-top: 24px;
-  font-size: 18px;
-  font-weight: 700;
-  text-align: center;
+  margin: 0 auto 16px;
 }
 
 .emotions__text {
   margin: 0;
-  margin-top: 20px;
+  margin-top: 0;
   padding-bottom: 25px;
   list-style: none;
 
@@ -26,7 +23,7 @@
 .emotions__message {
   display: block;
   margin: 0;
-  padding: 14px 20px;
+  padding: 12px 16px;
   width: 100%;
   min-height: 160px;
 
@@ -62,7 +59,54 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .emotions {
+    padding-bottom: 12px;
+  }
+
+  .emotions__title {
+    width: 648px;
+    margin-top: 20px;
+    margin-bottom: 56px;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 127px;
+      height: 1px;
+
+      top: 14px;
+      background-color: $grey;
+    }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+    }
+  }
+}
+
 @media (min-width: $desktop-width) {
+  .emotions {
+    margin-top: 10px;
+    margin-bottom: 39px;
+  }
+
+  .emotions__title {
+    width: 960px;
+
+    &::before,
+    &::after {
+      width: 280px;
+      height: 1px;
+    }
+  }
+
   .emotions__text {
     padding: 0;
   }

@@ -1,7 +1,15 @@
+.impressions {
+  margin: 18px auto;
+}
+
+.impressions__title {
+  margin-bottom: 22px;
+}
+
 .impressions__list {
   margin: 0;
   padding: 0;
-  padding-bottom: 25px;
+  padding-bottom: 10px;
   list-style: none;
 }
 
@@ -9,14 +17,14 @@
   font-size: 14px;
   font-weight: 400;
   text-align: left;
-  margin-top: 20px;
+  margin-bottom: 14px;
 }
 
 .impressions__label {
   position: relative;
   display: block;
 
-  padding: 7px 0 7px 72px;
+  padding: 15px 0 15px 72px;
   text-transform: none;
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
@@ -30,8 +38,8 @@
     top: 0;
     left: 0;
 
-    width: 46px;
-    height: 46px;
+    width: 56px;
+    height: 56px;
 
     background-color: #f2f2f2;
     border-radius: 50%;
@@ -51,11 +59,11 @@
   display: block;
   position: absolute;
 
-  top: 15px;
-  left: 15px;
+  top: 17px;
+  left: 17px;
 
-  width: 16px;
-  height: 16px;
+  width: 22px;
+  height: 22px;
   background-color: #333333;
   border-radius: 50%;
 }
@@ -65,8 +73,42 @@
 }
 
 @media (min-width: $tablet-width) {
+  .impressions {
+    width: 324px;
+    order: -1;
+  }
+
+  .impressions__title {
+    margin-left: 0;
+    margin-bottom: 58px;
+  }
+
   .impressions__item {
-    margin-top: 32px;
+    margin: 0;
     padding: 0;
+  }
+
+  .impressions__label {
+    padding-bottom: 38px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .impressions {
+    width: 480px;
+    margin: 0;
+  }
+
+  .impressions__title {
+    margin-left: 80px;
+  }
+
+  .impressions__item {
+    margin: 0;
+    padding: 0;
+  }
+
+  .impressions__label {
+    padding-bottom: 38px;
   }
 }
