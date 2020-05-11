@@ -1,6 +1,7 @@
 .page-header {
   display: flex;
   flex-direction: column;
+  margin-bottom: -3px;
 }
 
 .page-header__logo {
@@ -25,6 +26,7 @@
 
   &--inner {
     height: 158px;
+    margin-top: -29px;
   }
 
   &::before {

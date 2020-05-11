@@ -1,0 +1,143 @@
+.contacts {
+  margin: 0;
+  padding: 0;
+}
+
+.contacts__title {
+  margin: 18px 40px;
+}
+
+.contacts__list {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 27px;
+}
+
+.contacts__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 8px;
+
+  &--phone,
+  &--mail {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+
+      right: 0;
+      bottom: 0;
+      width: 58px;
+      height: 58px;
+      background-color: $middle-grey;
+      z-index: 10;
+
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &--phone::before {
+    background-image: url("../img/icon-phone.svg");
+  }
+
+  &--mail::before {
+    background-image: url("../img/icon-mail.svg");
+  }
+}
+
+.contacts__label {
+  margin-left: 22px;
+  margin-bottom: 8px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__title {
+    margin: 20px auto 22px;
+    width: 648px;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 127px;
+      height: 1px;
+
+      top: 14px;
+      background-color: $grey;
+    }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+    }
+  }
+
+  .contacts__list {
+    width: 648px;
+    margin-bottom: 54px;
+  }
+
+  .contacts__item {
+    margin-bottom: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    margin-top: 34px;
+    margin-bottom: 58px;
+  }
+
+  .contacts__title {
+    width: 960px;
+    margin: 0;
+    margin-bottom: 72px;
+
+    &::before,
+    &::after {
+      width: 280px;
+      height: 1px;
+    }
+  }
+
+  .contacts__list {
+    width: 960px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .contacts__item {
+    width: 480px;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &--phone {
+      width: 400px;
+      margin-right: 80px;
+    }
+  }
+
+  .contacts__label {
+    margin: 0;
+  }
+
+  .contacts__label-word {
+    display: none;
+  }
+
+  .contacts__input {
+    width: 315px;
+  }
+}

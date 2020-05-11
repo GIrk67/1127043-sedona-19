@@ -1,7 +1,8 @@
 .attractions__list {
   margin: 0;
+  margin-top: 22px;
   padding: 0;
-  padding-bottom: 25px;
+  padding-bottom: 4px;
   list-style: none;
 }
 
@@ -9,7 +10,7 @@
   font-size: 14px;
   font-weight: 400;
   text-align: left;
-  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .attractions__label {
@@ -30,8 +31,8 @@
     top: 0;
     left: 0;
 
-    width: 46px;
-    height: 46px;
+    width: 56px;
+    height: 56px;
 
     background-color: #f2f2f2;
     border-radius: 5px;
@@ -65,9 +66,35 @@
 }
 
 @media (min-width: $tablet-width) {
+  .attractions__title {
+    width: 648px;
+    padding: 0 170px;
+    margin-bottom: 45px;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 127px;
+      height: 1px;
+
+      top: 22px;
+      background-color: $grey;
+    }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+    }
+  }
+
   .attractions__list {
     margin: 0 auto;
-    width: 470px;
+    width: 510px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -75,17 +102,31 @@
 
   .attractions__item {
     display: block;
-    width: 235px;
-    margin-top: 32px;
+    width: 250px;
+
+    margin-bottom: 47px;
+    padding-left: 27px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .attractions__title {
+    width: 960px;
+    padding: 0 340px;
+
+    &::before,
+    &::after {
+      width: 280px;
+      height: 1px;
+    }
+  }
+
   .attractions__list {
     width: 960px;
   }
 
   .attractions__item {
     padding: 0;
+    width: 200px;
   }
 }
