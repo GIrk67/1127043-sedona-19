@@ -31,8 +31,20 @@
 
 @media (min-width: $tablet-width) {
   .name {
+    position: relative;
     width: 324px;
     margin: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      bottom: 32px;
+      left: 0;
+      width: 1px;
+      height: 290px;
+      background: $grey;
+    }
   }
 
   .name__title {
