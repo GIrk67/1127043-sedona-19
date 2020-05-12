@@ -27,7 +27,7 @@
 
 .modal__error {
   position: fixed;
-  top: 0;
+  top: 500px;
   margin-left: -160px;
   left: 50%;
   width: 320px;
@@ -39,7 +39,7 @@
 
 .modal__success {
   position: fixed;
-  top: 320px;
+  bottom: 400px;
   margin-left: -160px;
   left: 50%;
   width: 320px;
@@ -65,4 +65,47 @@
 .modal__button-success {
   font-size: 18px;
   padding: 16px 75px;
+}
+
+@media (min-width: $tablet-width) {
+  .modal__title {
+    font-size: 30px;
+  }
+
+  .modal__error {
+    top: auto;
+    bottom: 180px;
+    margin-left: -200px;
+    left: 50%;
+
+    width: 400px;
+    height: 347px;
+
+    padding: 61px 58px 49px;
+  }
+
+  .modal__button-error {
+    font-size: 18px;
+    padding: 18px 120px;
+  }
+
+  .modal__success {
+    bottom: 650px;
+    margin-left: -320px;
+    left: 50%;
+    width: 640px;
+    height: 347px;
+  }
+
+  .modal__success-wrapper {
+    padding: 62px 100px 40px;
+  }
+
+  .modal__button-success {
+    padding: 18px 150px;
+  }
+
+  .modal__button-wrapper {
+    padding: 44px 0;
+  }
 }
