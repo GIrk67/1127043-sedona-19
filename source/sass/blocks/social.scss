@@ -13,6 +13,14 @@
   height: 48px;
   margin-right: 4px;
   background-color: $light-grey-blue;
+
+  &:hover {
+    background-color: $middle-grey-blue;
+  }
+
+  &:active {
+    background-color: $dark-grey-blue;
+  }
 }
 
 .social__item:last-child {
@@ -41,6 +49,10 @@
   &--youtube {
     width: 20px;
     padding: 17px 14px;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
