@@ -5,10 +5,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
+
   <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
   <!--  Собственные стили  -->
   <link rel="stylesheet" href="css/style.min.css">
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement("picture");
+  </script>
+  <script src="picturefill.js" async></script>
 </head>
 
 <body>
@@ -35,8 +41,7 @@
           <li class="site-list__item"><a class="site-list__link" href="form.html">Форма отзыва</a></li>
           <li class="site-list__item"><a class="site-list__link" href="#">HTML Academy</a></li>
         </ul>
-        <button class="main-nav__close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
-        <button class="main-nav__open" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Управление меню</span></button>
       </nav>
       <div class="page-header__bg-photo">
         <img class="page-header__bg-title" src="img/text-sedona-index.svg" width="281" height="214"
@@ -81,14 +86,14 @@
               </div>
               <ul class="reasons__sublist sublist">
                 <li class="sublist__item sublist__item--house">
-                  <svg class="sublist__icon sublist__icon--house " width="74.695px" height="72.346px">
+                  <svg class="sublist__icon sublist__icon--house " width="26px" height="36px">
                     <use xlink:href="#icon-house"></use>
                   </svg>
                   <h3 class="sublist__title">Жилье</h3>
                   <p class="sublist__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </li>
                 <li class="sublist__item sublist__item--gift">
-                  <svg class="sublist__icon sublist__icon--gift" width="63px" height="75.084px">
+                  <svg class="sublist__icon sublist__icon--gift" width="37px" height="36px">
                     <use xlink:href="#icon-gift"></use>
                   </svg>
 
@@ -107,7 +112,7 @@
             <li class="reasons__item reasons__item--bridge">
               <div class="reasons__wrapper reasons__wrapper--bridge">
                 <div class="reasons__preamble">
-                  <h3 class="reasons__title reasons__title--bridge">Там есть <br class="reason__wrap"> мост дьявола</h3>
+                  <h3 class="reasons__title reasons__title--bridge">Там есть мост дьявола</h3>
                   <p class="reasons__number">- №2 -</p>
                   <p class="reasons__description reasons__description--bridge">Да, по нему можно пройти! Если вы
                     осмелитесь, конечно</p>
@@ -163,9 +168,13 @@
             покажем вам лучшие предложения гостиниц в
             седоне
           </p>
-          <button class="form-search__button button" type="button">Найти гостиницу</button>
+          <a class="form-search__button button" href="hotel.html">Найти гостиницу</a>
         </div>
         <div class="form-search__wrapper-map">
+          <div class="form-search__active-map"><iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d942406.6226411099!2d-111.89012508557828!3d34.71414334654222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDUyJzMwLjgiTiAxMTHCsDQwJzU5LjUiVw!5e0!3m2!1sru!2s!4v1589375404532!5m2!1sru!2s"
+              width="1200" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+              tabindex="0"></iframe></div>
           <picture>
             <source type="image/webp" media="(min-width: 1200px)"
               srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
@@ -178,7 +187,6 @@
             <img class="form-search__map" width="320" height="350" src="img/bg-map-mobile@1x.jpg"
               srcset="img/bg-map-mobile@2x.jpg 2x" alt="Карта местности">
           </picture>
-
         </div>
       </section>
     </main>

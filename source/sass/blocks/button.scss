@@ -6,7 +6,10 @@
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
   border: none;
+
+  overflow: visible;
 
   &:hover {
     background-color: $middle-grey-blue;

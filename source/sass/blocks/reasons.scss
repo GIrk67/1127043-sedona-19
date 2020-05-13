@@ -43,12 +43,10 @@
   }
 
   &--bridge {
+    max-width: 250px;
+    margin: 0 auto;
     padding-top: 42px;
   }
-}
-
-.reason__wrap {
-  display: none;
 }
 
 .reasons__number {
@@ -109,6 +107,10 @@
     padding-top: 45px;
     display: block;
     margin: 0 auto;
+
+    &--bridge {
+      max-width: 151px;
+    }
   }
 
   .reason__wrap {
@@ -178,5 +180,6 @@
   .reasons__photo {
     width: 800px;
     height: 256px;
+    object-fit: cover;
   }
 }
