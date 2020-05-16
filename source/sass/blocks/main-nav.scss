@@ -105,6 +105,10 @@
   display: none;
 }
 
+.main-nav--nojs .site-list {
+  display: inline;
+}
+
 @media (min-width: $tablet-width) {
   .main-nav {
     width: 768px;

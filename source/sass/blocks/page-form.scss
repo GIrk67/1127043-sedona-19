@@ -39,10 +39,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-form {
-    margin-bottom: 72px;
-  }
-
   .page-form__inscription {
     margin-top: 74px;
     margin-bottom: 54px;
@@ -79,6 +75,7 @@
 
 @media (min-width: $desktop-width) {
   .page-form {
+    display: block;
     margin-bottom: 92px;
   }
 

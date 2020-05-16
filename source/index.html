@@ -34,7 +34,7 @@
             alt="Логотип сайта Седона">
         </picture>
       </a>
-      <nav class="main-nav main-nav--opened main-nav--nojs">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active"><a class="site-list__link">Главная</a></li>
           <li class="site-list__item"><a class="site-list__link" href="photo.html">Фото и видео</a></li>
@@ -53,112 +53,110 @@
       <h1 class="visually-hidden">Седона - небольшой городок в Аризоне</h1>
 
       <section class="advantage">
-        <div class="advantage__wrapper">
-          <div class="advantage__preamble">
-            <h2 class="advantage__title">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h2>
-            <p class="advantage__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-          </div>
-          <ul class="advantage__list reasons">
-            <li class="reasons__item reasons__item--city">
-              <div class="reasons__wrapper">
-                <div class="reasons__preamble">
-                  <h3 class="reasons__title reasons__title--city">Настоящий городок</h3>
-                  <p class="reasons__number">- №1 -</p>
-                  <p class="reasons__description reasons__description--city">Седона не аттракцион для туристов, там
-                    течет своя жизнь</p>
-                </div>
-                <div class="reasons__image-wrapper">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1200px)"
-                      srcset="img/main-city-desktop@1x.webp 1x, img/main-city-desktop@2x.webp 2x">
-                    <source type="image/webp" media="(min-width: 768px)"
-                      srcset="img/main-city-tablet@1x.webp 1x, img/main-city-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="img/main-city-mobile@1x.webp 1x, img/main-city-mobile@2x.webp 2x">
-
-                    <source media="(min-width: 1200px)"
-                      srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
-                    <source media="(min-width: 768px)"
-                      srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
-                    <img class="reasons__photo" width="320" height="260" src="img/main-city-mobile@1x.jpg"
-                      srcset="img/main-city-mobile@2x.jpg 2x" alt="Фото городка">
-                  </picture>
-                </div>
-              </div>
-              <ul class="reasons__sublist sublist">
-                <li class="sublist__item sublist__item--house">
-                  <svg class="sublist__icon sublist__icon--house " width="26px" height="36px">
-                    <use xlink:href="#icon-house"></use>
-                  </svg>
-                  <h3 class="sublist__title">Жилье</h3>
-                  <p class="sublist__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-                </li>
-                <li class="sublist__item sublist__item--gift">
-                  <svg class="sublist__icon sublist__icon--gift" width="37px" height="36px">
-                    <use xlink:href="#icon-gift"></use>
-                  </svg>
-
-                  <h3 class="sublist__title">Сувениры</h3>
-                  <p class="sublist__description">Не только китайского, но и местного производства!</p>
-                </li>
-                <li class="sublist__item sublist__item--burger">
-                  <svg class="sublist__icon sublist__icon--burger" width="76.166px" height="68.959px">
-                    <use xlink:href="#icon-burger"></use>
-                  </svg>
-                  <h3 class="sublist__title">Еда</h3>
-                  <p class="sublist__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-                </li>
-              </ul>
-            </li>
-            <li class="reasons__item reasons__item--bridge">
-              <div class="reasons__wrapper reasons__wrapper--bridge">
-                <div class="reasons__preamble">
-                  <h3 class="reasons__title reasons__title--bridge">Там есть мост дьявола</h3>
-                  <p class="reasons__number">- №2 -</p>
-                  <p class="reasons__description reasons__description--bridge">Да, по нему можно пройти! Если вы
-                    осмелитесь, конечно</p>
-                </div>
-                <div class="reasons__image-wrapper">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1200px)"
-                      srcset="img/main-bridge-desktop@1x.webp 1x, img/main-bridge-desktop@2x.webp 2x">
-                    <source type="image/webp" media="(min-width: 768px)"
-                      srcset="img/main-bridge-tablet@1x.webp 1x, img/main-bridge-tablet@2x.webp 2x">
-                    <source type="image/webp"
-                      srcset="img/main-bridge-mobile@1x.webp 1x, img/main-bridge-mobile@2x.webp 2x">
-
-                    <source media="(min-width: 1200px)"
-                      srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
-                    <source media="(min-width: 768px)"
-                      srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
-                    <img class="reasons__photo" width="320" height="260" src="img/main-bridge-mobile@1x.jpg"
-                      srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Фото моста Дьявола">
-                  </picture>
-                </div>
-              </div>
-            </li>
-            <li class="reasons__item">
-              <div class="reasons__preamble reasons__preamble--square">
-                <h3 class="reasons__title reasons__title--square">Небольшая площадь</h3>
-                <p class="reasons__number">- №3 -</p>
-                <p class="reasons__description">Все интересные места находятся очень близко</p>
-              </div>
-            </li>
-            <li class="reasons__item">
-              <div class="reasons__preamble reasons__preamble--road">
-                <h3 class="reasons__title reasons__title--road">Красивая дорога</h3>
-                <p class="reasons__number">- №4 -</p>
-                <p class="reasons__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-              </div>
-            </li>
-            <li class="reasons__item">
-              <div class="reasons__preamble">
-                <h3 class="reasons__title reasons__title--few">Мало туристов</h3>
-                <p class="reasons__number">- №5 -</p>
-                <p class="reasons__description">Большинство едет в Гранд Каньон и толпится там</p>
-              </div>
-            </li>
-          </ul>
+        <div class="advantage__preamble">
+          <h2 class="advantage__title">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h2>
+          <p class="advantage__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </div>
+        <ul class="advantage__list reasons">
+          <li class="reasons__item reasons__item--city">
+            <div class="reasons__wrapper">
+              <div class="reasons__preamble">
+                <h3 class="reasons__title reasons__title--city">Настоящий городок</h3>
+                <p class="reasons__number">- №1 -</p>
+                <p class="reasons__description reasons__description--city">Седона не аттракцион для туристов, там
+                  течет своя жизнь</p>
+              </div>
+              <div class="reasons__image-wrapper">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/main-city-desktop@1x.webp 1x, img/main-city-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/main-city-tablet@1x.webp 1x, img/main-city-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/main-city-mobile@1x.webp 1x, img/main-city-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 1200px)"
+                    srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
+                  <img class="reasons__photo" width="320" height="260" src="img/main-city-mobile@1x.jpg"
+                    srcset="img/main-city-mobile@2x.jpg 2x" alt="Фото городка">
+                </picture>
+              </div>
+            </div>
+            <ul class="reasons__sublist sublist">
+              <li class="sublist__item sublist__item--house">
+                <svg class="sublist__icon sublist__icon--house " width="26" height="36">
+                  <use xlink:href="#icon-house"></use>
+                </svg>
+                <h3 class="sublist__title">Жилье</h3>
+                <p class="sublist__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              </li>
+              <li class="sublist__item sublist__item--gift">
+                <svg class="sublist__icon sublist__icon--gift" width="37" height="36">
+                  <use xlink:href="#icon-gift"></use>
+                </svg>
+                <h3 class="sublist__title">Сувениры</h3>
+                <p class="sublist__description">Не только китайского, но и местного производства!</p>
+              </li>
+              <li class="sublist__item sublist__item--burger">
+                <svg class="sublist__icon sublist__icon--burger" width="40" height="35">
+                  <use xlink:href="#icon-burger"></use>
+                </svg>
+                <h3 class="sublist__title">Еда</h3>
+                <p class="sublist__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </li>
+            </ul>
+          </li>
+          <li class="reasons__item reasons__item--bridge">
+            <div class="reasons__wrapper reasons__wrapper--bridge">
+              <div class="reasons__preamble">
+                <h3 class="reasons__title reasons__title--bridge">Там есть мост дьявола</h3>
+                <p class="reasons__number">- №2 -</p>
+                <p class="reasons__description reasons__description--bridge">Да, по нему можно пройти! Если вы
+                  осмелитесь, конечно</p>
+              </div>
+              <div class="reasons__image-wrapper">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/main-bridge-desktop@1x.webp 1x, img/main-bridge-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/main-bridge-tablet@1x.webp 1x, img/main-bridge-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/main-bridge-mobile@1x.webp 1x, img/main-bridge-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 1200px)"
+                    srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
+                  <img class="reasons__photo" width="320" height="260" src="img/main-bridge-mobile@1x.jpg"
+                    srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Фото моста Дьявола">
+                </picture>
+              </div>
+            </div>
+          </li>
+          <li class="reasons__item">
+            <div class="reasons__preamble reasons__preamble--square">
+              <h3 class="reasons__title reasons__title--square">Небольшая площадь</h3>
+              <p class="reasons__number">- №3 -</p>
+              <p class="reasons__description">Все интересные места находятся очень близко</p>
+            </div>
+          </li>
+          <li class="reasons__item">
+            <div class="reasons__preamble reasons__preamble--road">
+              <h3 class="reasons__title reasons__title--road">Красивая дорога</h3>
+              <p class="reasons__number">- №4 -</p>
+              <p class="reasons__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </div>
+          </li>
+          <li class="reasons__item">
+            <div class="reasons__preamble">
+              <h3 class="reasons__title reasons__title--few">Мало туристов</h3>
+              <p class="reasons__number">- №5 -</p>
+              <p class="reasons__description">Большинство едет в Гранд Каньон и толпится там</p>
+            </div>
+          </li>
+        </ul>
+
       </section>
       <section class="form-search">
         <div class="form-search__wrapper">
@@ -195,17 +193,17 @@
       <p class="page-footer__title">#visitSEDONA</p>
       <ul class="page-footer__social social">
         <li class="social__item"><a class="social__link social__link--twitter" href="#">
-            <svg width="17.5px" height="14.663px">
+            <svg width="18" height="14">
               <use xlink:href="#icon-twitter"></use>
             </svg>
             Твиттер</a></li>
         <li class="social__item"><a class="social__link social__link--facebook" href="#">
-            <svg width="8.672px" height="18.944px">
+            <svg width="9" height="19">
               <use xlink:href="#icon-facebook"></use>
             </svg>
             Фейсбук</a></li>
         <li class="social__item"><a class="social__link social__link--youtube" href="#">
-            <svg width="19.979px" height="14.015px">
+            <svg width="20" height="14">
               <use xlink:href="#icon-youtube"></use>
             </svg>
             Ютуб</a></li>
@@ -215,8 +213,8 @@
         <a class="page-footer__copyright-link" href="https://htmlacademy.ru">
           <span class="visually-hidden">HTML Academy</span>
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09"
-            enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+            x="0px" y="0px" width="27" height="34" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09"
+            xml:space="preserve">
             <path
               d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z">
             </path>

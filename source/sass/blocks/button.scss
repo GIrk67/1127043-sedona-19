@@ -20,7 +20,8 @@
     color: $white-30;
   }
 
-  &:disabled {
+  &:disabled,
+  &--disabled {
     background-color: $grey;
   }
 }
