@@ -56,6 +56,7 @@
   .site-list {
     height: 56px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
   }
@@ -65,8 +66,8 @@
     background-color: $white;
     box-shadow: none;
 
-    &:nth-child(2) {
-      margin-right: 156px;
+    &:nth-child(4n + 2) {
+      margin-right: 153px;
     }
 
     &:first-child {
@@ -99,12 +100,12 @@
   }
 
   .site-list__item {
-    width: 239px;
+    width: 240px;
     background-color: $white;
     box-shadow: none;
 
-    &:nth-child(2) {
-      margin-right: 244px;
+    &:nth-child(4n + 2) {
+      margin-right: 240px;
     }
   }
 }

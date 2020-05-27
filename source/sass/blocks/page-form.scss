@@ -24,8 +24,8 @@
 
 .page-form__description {
   text-align: center;
-  margin-top: 27px;
-  margin-bottom: 18px;
+  margin: 27px auto 18px;
+  max-width: 280px;
 }
 
 .page-form__button {
@@ -50,6 +50,10 @@
     margin: 0;
     margin-bottom: 34px;
     font-size: 30px;
+  }
+
+  .page-form__description {
+    max-width: 440px;
   }
 
   .page-form__send-wrapper {

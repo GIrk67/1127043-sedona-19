@@ -93,7 +93,7 @@
 @media (min-width: $desktop-width) {
   .contacts {
     margin-top: 34px;
-    margin-bottom: 58px;
+    margin-bottom: 40px;
   }
 
   .contacts__title {
@@ -118,7 +118,6 @@
 
   .contacts__item {
     width: 480px;
-    margin-bottom: 0;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -127,10 +126,15 @@
       width: 400px;
       margin-right: 80px;
     }
+
+    &--mail {
+      justify-content: flex-end;
+    }
   }
 
   .contacts__label {
     margin: 0;
+    margin-right: 16px;
   }
 
   .contacts__label-word {
@@ -139,5 +143,6 @@
 
   .contacts__input {
     width: 315px;
+    margin: 0;
   }
 }

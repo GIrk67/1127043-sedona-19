@@ -146,6 +146,7 @@
 
   .photo__item-wrapper {
     padding: 0 0 18px;
+    min-height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -217,10 +218,9 @@
     padding: 0;
     position: absolute;
     width: 100%;
+    height: 80px;
     bottom: 0;
     background-color: $black-30;
-
-    flex-direction: row;
   }
 
   .photo__item-text {
@@ -229,6 +229,12 @@
     width: 280px;
     padding-top: 24px;
     padding-bottom: 24px;
+  }
+
+  .photo__title-photo {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .photo__author {
